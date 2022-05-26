@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\GrowthBL\GrowthBL.csproj" />
     <ProjectReference Include="..\GrowthDL_2\GrowthDL.csproj" />
   </ItemGroup>
 
