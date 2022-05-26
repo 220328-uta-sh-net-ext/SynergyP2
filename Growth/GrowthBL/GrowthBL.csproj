@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GrowthDL_2\GrowthDL.csproj" />
+    <ProjectReference Include="..\GrowthModels\GrowthModels.csproj" />
+  </ItemGroup>
+
 </Project>
