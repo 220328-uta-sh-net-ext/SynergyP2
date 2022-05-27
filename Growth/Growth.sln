@@ -3,13 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrowthAPI", "GrowthAPI\GrowthAPI.csproj", "{5990163C-63B5-48DC-AFD6-F01042C14E81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrowthAPI", "GrowthAPI\GrowthAPI.csproj", "{5990163C-63B5-48DC-AFD6-F01042C14E81}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1131B4F2-ABA7-4BBF-9308-0AD000087974} = {1131B4F2-ABA7-4BBF-9308-0AD000087974}
+		{3533DF88-BCA5-4E8F-8FF3-EAD9CC5258CB} = {3533DF88-BCA5-4E8F-8FF3-EAD9CC5258CB}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrowthBL", "GrowthBL\GrowthBL.csproj", "{81628937-6338-4913-964C-15AD5D926457}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrowthBL", "GrowthBL\GrowthBL.csproj", "{81628937-6338-4913-964C-15AD5D926457}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrowthModels", "GrowthModels\GrowthModels.csproj", "{3533DF88-BCA5-4E8F-8FF3-EAD9CC5258CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrowthModels", "GrowthModels\GrowthModels.csproj", "{3533DF88-BCA5-4E8F-8FF3-EAD9CC5258CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrowthDL", "GrowthDL\GrowthDL.csproj", "{6F13D0F1-B930-4AD4-8B48-4182D8628BDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrowthDL", "GrowthDL_2\GrowthDL.csproj", "{6A4C71AF-7321-4DF5-AFB3-8123683951B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTesting", "UnitTesting\UnitTesting.csproj", "{1131B4F2-ABA7-4BBF-9308-0AD000087974}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +35,14 @@ Global
 		{3533DF88-BCA5-4E8F-8FF3-EAD9CC5258CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3533DF88-BCA5-4E8F-8FF3-EAD9CC5258CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3533DF88-BCA5-4E8F-8FF3-EAD9CC5258CB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6F13D0F1-B930-4AD4-8B48-4182D8628BDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6F13D0F1-B930-4AD4-8B48-4182D8628BDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6F13D0F1-B930-4AD4-8B48-4182D8628BDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6F13D0F1-B930-4AD4-8B48-4182D8628BDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A4C71AF-7321-4DF5-AFB3-8123683951B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A4C71AF-7321-4DF5-AFB3-8123683951B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A4C71AF-7321-4DF5-AFB3-8123683951B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A4C71AF-7321-4DF5-AFB3-8123683951B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1131B4F2-ABA7-4BBF-9308-0AD000087974}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1131B4F2-ABA7-4BBF-9308-0AD000087974}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1131B4F2-ABA7-4BBF-9308-0AD000087974}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1131B4F2-ABA7-4BBF-9308-0AD000087974}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
