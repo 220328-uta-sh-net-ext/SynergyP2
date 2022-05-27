@@ -1,10 +1,17 @@
 h1 {
-    margin-top: auto;
+    text-align: center;
+}
+
+p
+{
+    text-align: center;
 }
 
 .login-container
 {
-    display: block;
-    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    
+    /* margin-top: 50px; */
 }
 
