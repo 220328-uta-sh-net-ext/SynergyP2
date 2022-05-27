@@ -1,13 +1,15 @@
  <body>
-    <h2 class="text">Goal Options</h2>
-   <span class="text">
-     <img src="http://1.bp.blogspot.com/__kMkq-HsrsI/TJtV_hTRMcI/AAAAAAAAAG0/vFkq4izMALA/s1600/IMG_7048+1.jpg"/>
-    <h3>Choose your main goals from the following list</h3>
-     <ul>
+  <h2 class="text">{{ title }}</h2>s
+    <img src="http://1.bp.blogspot.com/__kMkq-HsrsI/TJtV_hTRMcI/AAAAAAAAAG0/vFkq4izMALA/s1600/IMG_7048+1.jpg" />
+    <h3 class="text">Choose your main goals from the following list</h3>
+   <div class="text">
+    <ul>
       <li>Improve Cognition</li>
       <li>Increase Physical Fitness</li>
       <li>Reduce Stress</li>
     </ul>
-     <button>Back</button><button>+ Add Custom Goal</button>
-     </span>
+     </div>
+      <button>Back</button>
+      <button (click)="onClick()">+ Add Custom Goal</button>
+      <button>Submit</button>
 </body>

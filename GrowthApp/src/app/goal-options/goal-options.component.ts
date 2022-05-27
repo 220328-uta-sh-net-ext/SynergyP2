@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./goal-options.component.css']
 })
 export class GoalOptionsComponent implements OnInit {
+  title: string = "Goal Options";
+  
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+  onClick() {
+ 
+    console.log('Add custom goal');
+    
   }
 
 }
