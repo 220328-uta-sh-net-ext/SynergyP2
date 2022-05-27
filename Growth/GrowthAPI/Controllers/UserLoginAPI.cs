@@ -1,4 +1,5 @@
-﻿using GrowthBL;
+﻿using GrowthAPI.JWT;
+using GrowthBL;
 using GrowthDL;
 using GrowthModels;
 using Microsoft.AspNetCore.Authorization;
@@ -8,16 +9,18 @@ using System.ComponentModel.DataAnnotations;
 
 namespace GrowthAPI.Controllers
 {
-    [Route("[Contoller]")]
+    [Route("[contoller]")]
     [ApiController]
     public class UserLoginAPI : Controller
     {
         readonly IEFRepo repo;
         readonly ILogic logic;
-        public UserLoginAPI(IEFRepo repo, ILogic logic)
+        readonly IJWT jwt;
+        public UserLoginAPI(IEFRepo repo, ILogic logic, IJWT jwt)
         {
             this.repo = repo;
             this.logic = logic;
+            this.jwt = jwt; 
         }
         [AllowAnonymous]
         [HttpPost]
@@ -46,6 +49,25 @@ namespace GrowthAPI.Controllers
             {
                 return BadRequest(ex.Message);
             }
+        }
+        [AllowAnonymous]
+        [HttpPost]
+        [Route("Authenticate/User")]
+        public IActionResult Authenticate([FromQuery]UserAccount user)
+        {
+            var auth = jwt.AuthUser(user);
+            try
+            {
+                if (auth == null)
+                {
+                    return BadRequest("Incorrect Login Credentials");
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            return Ok(auth);
         }
     }
 }
