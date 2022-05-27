@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { RouterModule, ROUTES } from '@angular/router';
 import { CommonModule } from "@angular/common";
 
-const routes = [{path: '', redirectTo : '/home', pathMatch: 'full'},
+const routes =  [{path: 'src/app/login-feature', redirectTo : '/login-feature', pathMatch: 'full'},
 //{path: 'home', component: },
 //{path :}
 ];
