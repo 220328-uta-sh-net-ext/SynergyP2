@@ -9,9 +9,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace GrowthAPI.Controllers
 {
-    [Route("[contoller]")]
+    [Route("contoller")]
     [ApiController]
-    public class UserLoginAPI : Controller
+    public class UserLoginAPI : ControllerBase
     {
         readonly IEFRepo repo;
         readonly ILogic logic;
