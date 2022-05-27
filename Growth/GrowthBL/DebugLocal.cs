@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GrowthDL
+namespace GrowthBL
 {
-    internal interface IRepo
+    public class DebugLocal
     {
+        static void Main() { }
     }
 }
