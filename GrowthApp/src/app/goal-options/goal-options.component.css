@@ -1,6 +1,16 @@
-h1 {
-    color: forestgreen;
-}
+
 body{
-    background-color: lawngreen;
+    background-color: forestgreen;
+    text-align: center;
+    border-style: solid;
+    border-color: lawngreen;
+    border-width: thick;
 }
+.text{
+    color: lawngreen;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+img{
+    height:200px;
+}
+
