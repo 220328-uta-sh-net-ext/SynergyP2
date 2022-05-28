@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'goal-options',
@@ -10,7 +11,6 @@ export class GoalOptionsComponent implements OnInit {
   
 
   constructor() { }
-
   ngOnInit(): void {
   }
   signUp() {
@@ -20,7 +20,7 @@ export class GoalOptionsComponent implements OnInit {
   }
   logIn() {
     console.log('logging in');
-
   }
+
 
 }
