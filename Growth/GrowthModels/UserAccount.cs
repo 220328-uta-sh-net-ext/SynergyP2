@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Text.RegularExpressions;
 
 
 namespace GrowthModels
@@ -11,18 +10,7 @@ namespace GrowthModels
         [Key]
         [Required]
         [BindRequired]
-        [RegularExpression("[a-zA-Z")]
-        public string Username
-        {
-            get { return Username; }
-            set
-            {
-                if (Regex.IsMatch(value, @"^[a-zA-Z]+$"))
-                    Username = value;
-                else
-                    throw new ValidationException("Your name can only contain letters");
-            }
-        }
+        public string Username { get; set; }
         [Required]
         [BindRequired]
         public string Password { get; set; }
