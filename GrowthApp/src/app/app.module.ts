@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 
 import { LoginFeatureComponent } from './login-feature/login-feature.component';
 import { GoalOptionsComponent } from './goal-options/goal-options.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginFeatureComponent,
-    GoalOptionsComponent
+    GoalOptionsComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
