@@ -1,21 +1,45 @@
+h2 {
+  color: #33484d;
+}
+body {
+  text-align: center;
+  border-style: solid;
+  border-color: #33484d;
+  border-width: thick;
+}
+img {
+  height: 200px;
+}
 
-body{
-    background-color: forestgreen;
-    text-align: center;
-    border-style: solid;
-    border-color: lawngreen;
-    border-width: thick;
+button {
+  color: #ebbf58;
+  background-color: #33484d;
+  border-color: #3d655d;
 }
-.text{
-    color: lawngreen;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.form-check {
+    text-align:center;
 }
-img{
-    height:200px;
+.text {
+  color: #33484d;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-button{
-    color: lawngreen;
-    background-color: forestgreen;
-    border-color: lawngreen;
+.first-color {
+  background: #ebbf58;
 }
+
+.second-color {
+  background: #769353;
+}
+
+.third-color {
+  background: #3d655d;
+}
+
+.fourth-color {
+  background: #33484d;
+}
+
+
+
+
 

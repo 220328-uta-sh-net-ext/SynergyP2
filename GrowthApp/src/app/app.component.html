@@ -6,9 +6,7 @@
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-<app-login-feature></app-login-feature>
-
+<!--<app-login-feature></app-login-feature>-->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
@@ -17,6 +15,11 @@
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <h1>{{title}}</h1>
+<nav>
+  <button routerLink="/login">Log In</button>
+  <button routerLink="/signUp">Sign Up</button>
+</nav>
+<router-outlet></router-outlet>
 <goal-options></goal-options>
 
-<router-outlet></router-outlet>
+
