@@ -55,7 +55,7 @@ jobs:
       shell: powershell
       run: |
         .\.sonar\scanner\dotnet-sonarscanner begin /k:"220328-uta-sh-net-ext_SynergyP2" /o:"220328-uta-sh-net-ext" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
-        dotnet build ${{env.Growth}}
+        dotnet build Growth
         .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
       
   docker-image-build:
