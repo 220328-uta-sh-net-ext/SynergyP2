@@ -19,11 +19,9 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore Growth
-    - name: Build
-      run: dotnet --no-restore Growth
+      run: dotnet restore Growth/GrowthAPI
     - name: Test
-      run: dotnet test --no-build --verbosity normal Growth
+      run: dotnet test --verbosity normal Growth
   docker-image-build:
     runs-on: ubuntu-latest
     
