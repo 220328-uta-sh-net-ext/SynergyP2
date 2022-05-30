@@ -44,6 +44,17 @@ jobs:
         push: true
         tags: index.docker.io/${{secrets.DOCKER_USER}}/growthapi:latest
         #${{github.sha}} uses a specific image
+  deploy:
+    runs-on: ubuntu-latest
+    needs: docker-image-build
+    steps:
+    - name: Azure WebApp
+      uses: Azure/webapps-deploy@v2
+      with:
+        app-name: GrowthAPI        
+        publish-profile: ${{secrets.AZURE_PUBLISH_SETTINGS}}
+        images: ${{secrets.DOCKER_USER}}/growthapi:latest
+
 
 
 
