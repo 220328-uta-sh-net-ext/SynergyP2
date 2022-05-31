@@ -8,16 +8,19 @@ using System.ComponentModel.DataAnnotations;
 
 namespace GrowthModels
 {
-    public class HealthProfile
+    public class Goals
     {
         [Key]
         [Required]
-        public string Username { get; set; }
+        public string GoalName { get; set; }
         [Required]
-        public string Height { get; set; }
+        public string Description { get; set; }
         [Required]
-        public int Weight { get; set; }
+        public string Habit1 { get; set; }
         [Required]
-        public string CurrentDate { get; set; }
+        public string Habit2 { get; set; }
+        [Required]
+        public string Habit3 { get; set; }
+
     }
 }
