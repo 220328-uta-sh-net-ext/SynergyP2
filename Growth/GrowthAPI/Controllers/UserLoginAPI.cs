@@ -9,7 +9,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace GrowthAPI.Controllers
 {
-    [Route("contoller")]
+    [Route("[controller]")]
     [ApiController]
     public class UserLoginAPI : ControllerBase
     {
