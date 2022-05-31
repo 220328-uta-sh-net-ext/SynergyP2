@@ -9,15 +9,15 @@ export class SignUpComponent implements OnInit {
   username: string = '';
   password: string = '';
 
-  constructor() {
-    console.log('sign up page constructed');
+  constructor()  {
+    console.log("sign up page constructed")
   }
-
-  onSubmit(): void {
+  
+  onSubmit(): void  {
     console.log(this.username, this.password);
   }
 
-  ngOnInit(): void {
-    console.log('sign up component initialized');
+  ngOnInit(): void  {
+    console.log("sign up component initialized");
   }
 }
