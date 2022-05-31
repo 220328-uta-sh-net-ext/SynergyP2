@@ -5,6 +5,7 @@ import { GoalOptionsComponent } from './goal-options/goal-options.component';
 import { LoginFeatureComponent } from './login-feature/login-feature.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 
 const routes = [
   //{ path: 'src/app/login-feature', redirectTo: '/login-feature', pathMatch: 'full' },
@@ -19,6 +20,10 @@ const routes = [
   {
     path: 'signUp',
     component: SignUpComponent,
+  },
+  {
+    path: 'dashboard',
+    component: UserDashboardComponent,
   },
 ];
 

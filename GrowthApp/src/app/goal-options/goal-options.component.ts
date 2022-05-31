@@ -7,8 +7,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./goal-options.component.css'],
 })
 export class GoalOptionsComponent implements OnInit {
-  title: string = 'Goals Page';
-
   constructor() {}
   ngOnInit(): void {}
 }
