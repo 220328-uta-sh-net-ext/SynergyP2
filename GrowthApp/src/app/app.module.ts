@@ -8,6 +8,8 @@ import { LoginFeatureComponent } from './login-feature/login-feature.component';
 import { GoalOptionsComponent } from './goal-options/goal-options.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { FormsModule } from '@angular/forms';
+import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,9 @@ import { FormsModule } from '@angular/forms';
     GoalOptionsComponent,
     SignUpComponent
     
+    SignUpComponent,
+    UserDashboardComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,

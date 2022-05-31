@@ -40,5 +40,26 @@ namespace GrowthAPI.Controllers
             }
             return Ok(usernames);
         }
+        [AllowAnonymous]
+        [HttpGet]
+        [Route("SeeAll/Users")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(400)]
+        public ActionResult<List<UserAccount>> SeeAllUsers()
+        {
+            List<UserAccount> usernames = repo.GetAllUsers();
+            try
+            {
+                if(usernames.Count <= 0)
+                {
+                    return NotFound("No users showing from database");
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            return Ok(usernames);
+        }
     }
 }
