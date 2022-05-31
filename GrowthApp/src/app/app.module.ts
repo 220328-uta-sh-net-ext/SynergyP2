@@ -16,8 +16,6 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     AppComponent,
     LoginFeatureComponent,
     GoalOptionsComponent,
-    SignUpComponent
-    
     SignUpComponent,
     UserDashboardComponent,
     LandingPageComponent
