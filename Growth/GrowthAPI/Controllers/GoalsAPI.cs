@@ -22,15 +22,32 @@ namespace GrowthAPI.Controllers
             this.logic = logic;
             this.jwt = jwt;
         }
-        /*[AllowAnonymous]
+        [AllowAnonymous]
         [HttpPost]
         [Route("CreateProfile")]
         [ProducesResponseType(201)]
         [ProducesResponseType(400)]
-        public ActionResult AddNewProfile([FromQuery][BindRequired]string Username, [BindRequired] int Height, [BindRequired] int Weight)
+        public ActionResult AddNewProfile(string Username, string Height, int Weight)
         {
-            List<HealthProfile> newProfile = new List<HealthProfile>();
-            newList = 
-        }*/
+            List<HealthProfile> newList = new List<HealthProfile>();
+            newList = logic.GetHealthProfile(Username);
+            if (newList.Count > 0)
+            {
+                return BadRequest($"Profile with {Username} already has a profile");
+            }
+            HealthProfile newProfile = new HealthProfile();
+            newProfile.Username = Username;
+            newProfile.Height = Height;
+            newProfile.Weight = Weight;
+            try
+            {
+                repo.AddProfile(newProfile);
+                return CreatedAtAction("AddNewProfile", newProfile);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }    
 }
