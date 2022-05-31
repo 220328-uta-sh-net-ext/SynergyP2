@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { NgModule } from '@angular/core';
+
 @Component({
   selector: 'app-sign-up',
   templateUrl: './sign-up.component.html',
@@ -8,6 +10,8 @@ import { Component, OnInit } from '@angular/core';
 export class SignUpComponent implements OnInit {
   username: string = "";
   password: string = "";
+  phoneNumber: string = "";
+  email: string = "";
 
   constructor()
   {

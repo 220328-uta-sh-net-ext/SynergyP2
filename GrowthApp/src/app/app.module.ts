@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { LoginFeatureComponent } from './login-feature/login-feature.component';
 import { GoalOptionsComponent } from './goal-options/goal-options.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,10 +15,12 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     LoginFeatureComponent,
     GoalOptionsComponent,
     SignUpComponent
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
