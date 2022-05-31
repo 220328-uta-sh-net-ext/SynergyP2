@@ -4,23 +4,11 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'goal-options',
   templateUrl: './goal-options.component.html',
-  styleUrls: ['./goal-options.component.css']
+  styleUrls: ['./goal-options.component.css'],
 })
 export class GoalOptionsComponent implements OnInit {
-  title: string = "Growth";
-  
+  title: string = 'Goals Page';
 
-  constructor() { }
-  ngOnInit(): void {
-  }
-  signUp() {
- 
-    console.log('signing up');
-    
-  }
-  logIn() {
-    console.log('logging in');
-  }
-
-
+  constructor() {}
+  ngOnInit(): void {}
 }
