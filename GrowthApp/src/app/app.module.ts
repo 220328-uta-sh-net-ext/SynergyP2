@@ -9,6 +9,7 @@ import { GoalOptionsComponent } from './goal-options/goal-options.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { ColorpaletteComponent } from './colorpalette/colorpalette.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     GoalOptionsComponent,
     SignUpComponent,
     UserDashboardComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    ColorpaletteComponent
   ],
   imports: [
     BrowserModule,
