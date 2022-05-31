@@ -22,6 +22,7 @@ import { ColorpaletteComponent } from './colorpalette/colorpalette.component';
     LandingPageComponent,
     ColorpaletteComponent,
   ],
+  
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
