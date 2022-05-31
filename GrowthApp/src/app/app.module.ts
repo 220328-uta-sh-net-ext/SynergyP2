@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { LoginFeatureComponent } from './login-feature/login-feature.component';
 import { GoalOptionsComponent } from './goal-options/goal-options.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginFeatureComponent,
     GoalOptionsComponent,
-    SignUpComponent
+    SignUpComponent,
+    UserDashboardComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,

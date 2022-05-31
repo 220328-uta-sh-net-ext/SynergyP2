@@ -1,0 +1,41 @@
+h2 {
+  color: #33484d;
+}
+body {
+  text-align: center;
+  border-style: solid;
+  border-color: #33484d;
+  border-width: thick;
+}
+img {
+  height: 200px;
+}
+
+button {
+  color: #ebbf58;
+  background-color: #33484d;
+  border-color: #3d655d;
+}
+.form-check {
+  text-align: center;
+}
+.text {
+  color: #33484d;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.first-color {
+  background: #ebbf58;
+}
+
+.second-color {
+  background: #769353;
+}
+
+.third-color {
+  background: #3d655d;
+}
+
+.fourth-color {
+  background: #33484d;
+}
