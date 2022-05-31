@@ -1,23 +1,27 @@
 import { Component, OnInit } from '@angular/core';
 
+import { NgModule } from '@angular/core';
+
 @Component({
   selector: 'app-sign-up',
   templateUrl: './sign-up.component.html',
   styleUrls: ['./sign-up.component.css'],
 })
 export class SignUpComponent implements OnInit {
-  username: string = '';
-  password: string = '';
+  username: string = "";
+  password: string = "";
+  phoneNumber: string = "";
+  email: string = "";
 
-  constructor() {
-    console.log('sign up page constructed');
+  constructor()  {
+    console.log("sign up page constructed")
   }
-
-  onSubmit(): void {
+  
+  onSubmit(): void  {
     console.log(this.username, this.password);
   }
 
-  ngOnInit(): void {
-    console.log('sign up component initialized');
+  ngOnInit(): void  {
+    console.log("sign up component initialized");
   }
 }
