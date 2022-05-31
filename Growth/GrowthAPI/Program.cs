@@ -78,6 +78,7 @@ if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
 
 
 app.UseHttpsRedirection();
+app.Logger.LogInformation("App Started");
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseStaticFiles();
