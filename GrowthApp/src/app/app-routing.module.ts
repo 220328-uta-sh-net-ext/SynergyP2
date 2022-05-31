@@ -4,23 +4,28 @@ import { RouterModule, ROUTES } from '@angular/router';
 import { GoalOptionsComponent } from './goal-options/goal-options.component';
 import { LoginFeatureComponent } from './login-feature/login-feature.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 const routes = [
-   //{ path: 'src/app/login-feature', redirectTo: '/login-feature', pathMatch: 'full' },
+  //{ path: 'src/app/login-feature', redirectTo: '/login-feature', pathMatch: 'full' },
   {
-    path: 'login', component: LoginFeatureComponent,
-    
+    path: 'landingPage',
+    component: LandingPageComponent,
   },
   {
-    path: 'signUp', component: SignUpComponent
-  }
-//{path :}
+    path: 'login',
+    component: LoginFeatureComponent,
+  },
+  {
+    path: 'signUp',
+    component: SignUpComponent,
+  },
 ];
 
 @NgModule({
   //declarations: [],
   //imports: [CommonModule, RouterModule.forRoot(routes)],
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

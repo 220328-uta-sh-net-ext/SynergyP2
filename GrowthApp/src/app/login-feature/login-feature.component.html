@@ -1,20 +1,19 @@
-
 <h1>Welcome to Growth!</h1>
 <p>Please Login to Continue</p>
-    <!--<h3 *ngIf = 'error'> Username or Password Incorrect</h3>-->
-    <!-- Creating a form to submit login information -->
-    <div class="login-container">
-        <form id = "login" (ngSubmit)="onSubmit()">
-            <div class = "input-div">
-                <label for="username"> Username:</label>
-                <input id="username" name="username" type = "text">
-            </div>
-            <div class = "input-div">
-                <label for="password"> Password:</label>
-                <input id="password" name="password" type = "password">
-            </div>
-
-            <input type = "submit" value = "Login"/>
-
-        </form>
+<!--<h3 *ngIf = 'error'> Username or Password Incorrect</h3>-->
+<!-- Creating a form to submit login information -->
+<div class="login-container">
+  <form id="login" (ngSubmit)="onSubmit()">
+    <div class="input-div">
+      <label for="username"> Username:</label>
+      <input id="username" name="username" type="text" />
     </div>
+    <br />
+    <div class="input-div">
+      <label for="password"> Password:</label>
+      <input id="password" name="password" type="password" />
+    </div>
+    <br />
+    <input type="submit" value="Login" />
+  </form>
+</div>

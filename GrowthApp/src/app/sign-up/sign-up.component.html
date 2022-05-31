@@ -1,13 +1,17 @@
 <h1>Create An Account</h1>
 <p>Please enter username and password combination below</p>
-<form id="sign up" (ngSubmit)="onSubmit()">
-  <div>
-    <label for="username">Username:</label>
-    <input id="username" name="username" type="text" />
-  </div>
-  <div>
-    <label for="password">Password:</label>
-    <input id="password" name="password" type="text" />
-  </div>
-  <input type="submit" value="Sign Up" />
-</form>
+<div class="login-container">
+  <form id="sign up" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="username">Username:</label>
+      <input id="username" name="username" type="text" />
+    </div>
+    <br />
+    <div>
+      <label for="password">Password:</label>
+      <input id="password" name="password" type="text" />
+    </div>
+    <br />
+    <input type="submit" value="Sign Up" />
+  </form>
+</div>
