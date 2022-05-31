@@ -27,7 +27,7 @@ namespace GrowthAPI.Controllers
         [Route("CreateAccount")]
         [ProducesResponseType(201)]
         [ProducesResponseType(400)]
-        public ActionResult AddNewAccount([BindRequired] string Username, [BindRequired][DataType(DataType.Password)] string Password, [BindRequired] string Email, string? PhoneNumber)
+        public ActionResult AddNewAccount(string Username,string Password,string Email, string? PhoneNumber)
         {
             List<UserAccount> newList = new List<UserAccount>();
             newList = logic.GetUserAccount(Username);

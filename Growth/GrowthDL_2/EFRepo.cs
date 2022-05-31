@@ -26,5 +26,25 @@ namespace GrowthDL
         {
             return db.Users.ToList();
         }
+        public HealthProfile AddProfile(HealthProfile newProfile)
+        {
+            db.HealthProfiles.Add(newProfile);
+            db.SaveChanges();
+            return newProfile;
+        }
+        public Goals AddGoal(Goals newGoal)
+        {
+            db.Goals.Add(newGoal);
+            db.SaveChanges();
+            return newGoal;
+        }
+        public List<HealthProfile> GetHealthProfiles()
+        {
+            return db.HealthProfiles.ToList();
+        }
+        public List<Goals> GetAllGoals()
+        {
+            return db.Goals.ToList();
+        }
     }
 }
