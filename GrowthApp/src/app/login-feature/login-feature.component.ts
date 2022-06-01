@@ -36,5 +36,4 @@ export class LoginFeatureComponent implements OnInit {
   ngOnInit(): void {
     console.log("Login Page initialized");
   }
-
 }

@@ -11,14 +11,6 @@ img {
   height: 200px;
 }
 
-button {
-  color: #ebbf58;
-  background-color: #33484d;
-  border-color: #3d655d;
-}
-.form-check {
-  text-align: center;
-}
 .text {
   color: #33484d;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -26,6 +18,7 @@ button {
 }
 .first-color {
   background: #ebbf58;
+  margin: auto;
 }
 
 .second-color {
