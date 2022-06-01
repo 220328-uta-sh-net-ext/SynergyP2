@@ -21,5 +21,9 @@ namespace GrowthDL
         /// </summary>
         /// <returns>all the users in the db</returns>
         List<UserAccount> GetAllUsers();
+        List<Goals> GetAllGoals();
+        List<HealthProfile> GetHealthProfiles();
+        Goals AddGoal(Goals newGoal);
+        HealthProfile AddProfile(HealthProfile newProfile);
     }
 }
