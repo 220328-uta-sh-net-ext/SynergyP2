@@ -59,3 +59,6 @@ li {
   transition: ease-in-out;
   transition-duration: 100ms;
 }
+.display4 {
+  --bs-body-font-family: var(--bs-font-sans-serif);
+}

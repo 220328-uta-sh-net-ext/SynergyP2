@@ -1,8 +1,12 @@
 h2 {
+  font-family: "Libre Caslon Display", serif;
   color: #33484d;
+  font-weight: 600;
+  font-size: 50px;
 }
 h3 {
-  font-family: "Tiro Tamil", serif;
+  font-family: "Libre Caslon Display", serif;
+  font-weight: 650;
 }
 body {
   text-align: center;
@@ -56,4 +60,19 @@ button:hover {
   background: #1db954;
   border: 2px solid #2b580c;
   transform: rotate(360deg);
+}
+.waviy {
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  animation: flip 4s;
+  animation-delay: calc(0.2s * var(--i));
+}
+@keyframes flip {
+  0%,
+  80% {
+    transform: rotateY(360deg);
+  }
 }
