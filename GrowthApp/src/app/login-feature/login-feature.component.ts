@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { LoginService } from '../login.service';
 
 @Component({
   selector: 'app-login-feature',
@@ -7,15 +9,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginFeatureComponent implements OnInit {
 
-  username : string = "";
-  password : string = "";
+  Username : string = "";
+  Password : string = "";
+  Email: string = "test@ihatemyjob.net";
+  error: boolean = false;
 
-  //error : boolean = false;
-
-  onSubmit() : void{
-    console.log(this.username, this.password)
+  onSubmit(): void {
+    console.log(this.Username, this.Password)
+    this.LoginService.login(this.Username, this.Password, this.Email)
+      .subscribe((data) => {
+        console.log(data)
+        this.LoginService.token = data.token;
+        console.log(this.LoginService.token)
+        this.router.navigate(['dashboard']);
+      },
+        (error) => {
+          console.log(error)
+          this.error = true;
+        }
+     )
   }
-  constructor() {
+  constructor(private LoginService: LoginService, private router: Router) {
     console.log("Login page constructed");
    }
 
