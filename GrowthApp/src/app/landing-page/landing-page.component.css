@@ -1,24 +1,20 @@
 h2 {
   color: #33484d;
 }
+h3 {
+  font-family: "Tiro Tamil", serif;
+}
 body {
   text-align: center;
   border-style: solid;
   border-color: #33484d;
   border-width: thick;
+  background-color: #33484d;
 }
 img {
   height: 200px;
 }
 
-button {
-  color: #ebbf58;
-  background-color: #33484d;
-  border-color: #3d655d;
-}
-.form-check {
-  text-align: center;
-}
 .text {
   color: #33484d;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -26,6 +22,7 @@ button {
 }
 .first-color {
   background: #ebbf58;
+  margin: auto;
 }
 
 .second-color {
@@ -33,7 +30,8 @@ button {
 }
 
 .third-color {
-  background: #3d655d;
+  background-color: #3d655d;
+  margin-bottom: 50px;
 }
 
 .fourth-color {

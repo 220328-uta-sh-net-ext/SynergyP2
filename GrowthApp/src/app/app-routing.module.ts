@@ -25,6 +25,10 @@ const routes = [
     path: 'dashboard',
     component: UserDashboardComponent,
   },
+  {
+    path: 'goals',
+    component: GoalOptionsComponent,
+  },
 ];
 
 @NgModule({

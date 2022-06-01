@@ -1,5 +1,10 @@
+body {
+  background-color: #a8b94e;
+}
+
 button {
   border: 1px solid;
+  border-radius: 1px;
 }
 
 button:hover {

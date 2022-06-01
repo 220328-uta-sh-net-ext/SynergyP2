@@ -9,11 +9,13 @@
 <h3>-ExEr API or ExerciseDB API</h3>
 <p>
 **Should we stick to body weight exercises or include exercises that use equipment such as bands, weights and structures? I think free weights, bands and body weight exercises would be great.**
-
+<a>https://exrx.net/Store/Other/Licensing</a>
+<a>https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb/</a>
 Get exercise by target muscle/ body part<br>
 Can preselect them by hand using the ID
 <br>
 5 results each:
+
 <ul>
 <li>abs</li>
 <li>arms</li>
@@ -23,11 +25,12 @@ Can preselect them by hand using the ID
 </ul>
 </p>
 
-
 <h3>-Spotify API</h3>
 <p>
-
-Get tracks by ID<br>
+<a>https://rapidapi.com/Glavier/api/spotify23/</a>
+<br>
+Get tracks by ID
+<br>
 5 tracks each for each intensity level:
 <ul>
 <li>intense</li>
@@ -41,6 +44,8 @@ Get tracks by ID<br>
 <h2>Nutrition</h2>
 <h3>-Recipe-Food-Nutrition API</h3>
 <p>
+<a>https://rapidapi.com/spoonacular/api/recipe-food-nutrition/</a>
+<br>
 Let's implement on of these feature choices:
 <ol>
 <li>Get random recipe</li>

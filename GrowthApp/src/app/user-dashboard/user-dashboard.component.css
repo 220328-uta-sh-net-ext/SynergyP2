@@ -6,3 +6,9 @@ h1 {
   display: flex;
   justify-content: center;
 }
+.card-subtitle {
+  color: #2b580c;
+}
+.card-link {
+  color: #d36239;
+}
