@@ -9,7 +9,12 @@ export class LandingPageComponent implements OnInit {
   title: string = 'Growth';
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    // fetch('https://motivational-quotes1.p.rapidapi.com/motivation', options)
+    //   .then((response) => response.json())
+    //   .then((response) => console.log(response))
+    //   .catch((err) => console.error(err));
+  }
 
   signUp() {
     console.log('signing up');
