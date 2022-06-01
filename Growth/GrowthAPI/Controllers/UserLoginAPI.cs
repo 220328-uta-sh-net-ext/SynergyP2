@@ -9,7 +9,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace GrowthAPI.Controllers
 {
-    [Route("contoller")]
+    [Route("[controller]")]
     [ApiController]
     public class UserLoginAPI : ControllerBase
     {
@@ -27,7 +27,7 @@ namespace GrowthAPI.Controllers
         [Route("CreateAccount")]
         [ProducesResponseType(201)]
         [ProducesResponseType(400)]
-        public ActionResult AddNewAccount([FromQuery][BindRequired] string Username, [BindRequired][DataType(DataType.Password)] string Password, [BindRequired] string Email, string? PhoneNumber)
+        public ActionResult AddNewAccount(string Username,string Password,string Email, string? PhoneNumber)
         {
             List<UserAccount> newList = new List<UserAccount>();
             newList = logic.GetUserAccount(Username);
@@ -53,7 +53,7 @@ namespace GrowthAPI.Controllers
         [AllowAnonymous]
         [HttpPost]
         [Route("Authenticate/User")]
-        public IActionResult Authenticate([FromQuery]UserAccount user)
+        public IActionResult Authenticate(UserAccount user)
         {
             var auth = jwt.AuthUser(user);
             try

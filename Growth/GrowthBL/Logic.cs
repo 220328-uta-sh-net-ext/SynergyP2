@@ -27,6 +27,18 @@ namespace GrowthBL
             var filteredPasswords = passwords.Where(u => u.Password.Equals(Password)).ToList();
             return filteredPasswords;
         }
+        public List<Goals> GetGoal(string Goal)
+        {
+            List<Goals> goals = repo.GetAllGoals();
+            var filteredgoals = goals.Where(g => g.GoalName.Equals(Goal)).ToList();
+            return filteredgoals;
+        }
+        public List<HealthProfile> GetHealthProfile(string Username)
+        {
+            List<HealthProfile> profiles = repo.GetHealthProfiles();
+            var filteredprofiles = profiles.Where(p => p.Username.Equals(Username)).ToList();
+            return filteredprofiles;
+        }
         public bool AuthUser(UserAccount user)
         {
             List<UserAccount> users = repo.GetAllUsers();
