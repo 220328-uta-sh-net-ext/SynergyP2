@@ -15,6 +15,21 @@ img {
   height: 200px;
 }
 
+button {
+  border-radius: 25px;
+  border: 2px solid #d36239;
+  background: #2b580c;
+  color: #fff;
+  font-size: 16px;
+  display: block;
+  margin: 0 auto;
+  line-height: 22px;
+  padding: 16px 24px;
+  text-decoration: none;
+  transition: all 200ms ease;
+  box-shadow: rgb(37 39 89 / 8%) 0px 8px 8px 0;
+}
+
 .text {
   color: #33484d;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -36,4 +51,9 @@ img {
 
 .fourth-color {
   background: #33484d;
+}
+button:hover {
+  background: #1db954;
+  border: 2px solid #2b580c;
+  transform: rotate(360deg);
 }
