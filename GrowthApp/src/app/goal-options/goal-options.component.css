@@ -17,11 +17,12 @@ button {
   border-color: #3d655d;
 }
 .form-check {
-    text-align:center;
+  text-align: center;
 }
 .text {
   color: #33484d;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 .first-color {
   background: #ebbf58;
@@ -39,7 +40,22 @@ button {
   background: #33484d;
 }
 
+.category {
+  font-family: "Bebas Neue", cursive;
+}
+h1 {
+  color: #2b580c;
+  font-weight: 350;
+}
 
-
-
-
+li {
+  font-family: var(--bs-body-font-family);
+}
+.category {
+  font-size: larger;
+}
+.category:hover {
+  color: #d36239;
+  transition: ease-in-out;
+  transition-duration: 100ms;
+}

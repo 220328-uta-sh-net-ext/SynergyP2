@@ -1,18 +1,17 @@
 h1 {
-    text-align: center;
+  text-align: center;
+}
+body {
+  max-width: fit-content;
 }
 h3 {
     text-align: center;
 }
-
-p
-{
-    text-align: center;
+p {
+  text-align: center;
 }
 
-.login-container
-{
-    display: flex;
-    justify-content: center;
+.login-container {
+  display: flex;
+  justify-content: center;
 }
-
