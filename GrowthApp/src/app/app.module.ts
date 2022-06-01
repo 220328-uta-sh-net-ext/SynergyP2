@@ -23,6 +23,7 @@ import { NgChartsModule } from 'ng2-charts';
     LandingPageComponent,
     ColorpaletteComponent,
   ],
+<<<<<<< HEAD
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -30,6 +31,10 @@ import { NgChartsModule } from 'ng2-charts';
     HttpClientModule,
     NgChartsModule,
   ],
+=======
+  
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
+>>>>>>> ab54d5c195bf854938c591851644b8ece62a4336
   providers: [],
   bootstrap: [AppComponent],
 })
