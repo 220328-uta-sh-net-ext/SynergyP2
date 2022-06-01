@@ -1,11 +1,15 @@
 h2 {
   color: #33484d;
 }
+h3 {
+  font-family: "Tiro Tamil", serif;
+}
 body {
   text-align: center;
   border-style: solid;
   border-color: #33484d;
   border-width: thick;
+  background-color: #33484d;
 }
 img {
   height: 200px;
@@ -26,7 +30,8 @@ img {
 }
 
 .third-color {
-  background: #3d655d;
+  background-color: #3d655d;
+  margin-bottom: 50px;
 }
 
 .fourth-color {
