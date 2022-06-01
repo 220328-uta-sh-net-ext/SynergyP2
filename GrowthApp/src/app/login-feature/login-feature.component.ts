@@ -11,7 +11,7 @@ export class LoginFeatureComponent implements OnInit {
 
   Username : string = "";
   Password : string = "";
-  Email: string = "test@ihatemyjob.net";
+  Email: string = "";
   error: boolean = false;
 
   onSubmit(): void {
