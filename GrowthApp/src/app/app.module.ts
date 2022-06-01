@@ -11,7 +11,6 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ColorpaletteComponent } from './colorpalette/colorpalette.component';
-import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -28,8 +27,7 @@ import { NgChartsModule } from 'ng2-charts';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule,
-    NgChartsModule,
+    HttpClientModule
   ],
 
   providers: [],
