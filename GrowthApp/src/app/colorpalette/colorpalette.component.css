@@ -1,0 +1,29 @@
+td {
+  height: 100px;
+  padding: 50px;
+  border: 6px solid white;
+}
+.art {
+  margin: auto;
+}
+
+/* Preferred Palette */
+
+.prone {
+  background-color: #d36239;
+}
+.prtwo {
+  background-color: #a8b94e;
+}
+.prthree {
+  background-color: #2b580c;
+}
+.prfour {
+  background-color: #f7b71d;
+}
+.prfive {
+  background-color: #ff9234;
+}
+.prsix {
+  background-color: #afa939;
+}

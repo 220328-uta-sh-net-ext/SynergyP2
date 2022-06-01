@@ -1,0 +1,9 @@
+button {
+  border: 1px solid;
+}
+
+button:hover {
+  background-color: #a8b94e;
+  border: 1px solid;
+  transition: all 200ms ease;
+}
