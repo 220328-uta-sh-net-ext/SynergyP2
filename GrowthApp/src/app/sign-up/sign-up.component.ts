@@ -8,17 +8,17 @@ import { NgModule } from '@angular/core';
   styleUrls: ['./sign-up.component.css'],
 })
 export class SignUpComponent implements OnInit {
-  username: string = "";
-  password: string = "";
-  phoneNumber: string = "";
-  email: string = "";
+  Username: string = "";
+  Password: string = "";
+  PhoneNumber: string = "";
+  Email: string = "";
 
   constructor()  {
     console.log("sign up page constructed")
   }
   
   onSubmit(): void  {
-    console.log(this.username, this.password);
+    console.log(this.Username, this.Password);
   }
 
   ngOnInit(): void  {
